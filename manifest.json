@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Paper.id Auth Token Picker",
+  "version": "1.0.0",
+  "description": "Nangkep header Authorization dari request ke api.paper.id, biar gampang di-copy tanpa buka DevTools.",
+  "permissions": [
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.paper.id/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Paper.id Auth Token",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
